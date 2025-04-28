@@ -14,7 +14,7 @@ object ApiModule {
     @Provides
     fun provideMovieService(): Retrofit {
         return Retrofit.Builder()
-            .baseUrl("https://spc4skr4-3000.brs.devtunnels.ms/")
+            .baseUrl("https://movies-api-6stw.onrender.com/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
